@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Resizer</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a href="/Qa-Test">
+                        <img src="../images/logo-headerr.png" alt="logo" class="header-logo">
+                    </a>                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="">Инструменты</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="">Помощь</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <div class="main">
+            <div class="container">
+                <section class="resizedImage">
+                    <h1 class="resizedImage-title">Изменить размеры фотографии</h1>
+                    <div class="select__inner">
+                        <div class="select">
+                            <select id="mySelect">
+                                <option value="dog">Собака</option>
+                                <option value="black">Черный экран</option>
+                                <option value="forest">Природа</option>
+                              </select>
+                              <button class="select-btn">Выбрать</button>
+                        </div>
+                    </div>
+                    <div id="imageContainer"></div>
+                    <div class="resizedImage-form">
+                      <label for="widthInput">Width:</label>
+                      <input class="resizedImage-input" type="number" id="widthInput" min="1" value="100">
+                      <label for="heightInput">Height:</label>
+                      <input class="resizedImage-input" type="number" id="heightInput" min="1" value="100">
+                      <button id="downloadButton">Скачать с новым разрешением</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <img src="../images/logo-headerr.png" alt="logo" class="header-logo">
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+<script src="../js/resizedImage.js"></script>
+</body>
+</html>

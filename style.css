@@ -318,3 +318,92 @@ body {
 .blocked{
     color: #ccc;
 }
+
+
+
+/* resized */
+.resizedImage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.select{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#mySelect { 
+    font-size: 14px; 
+    font-weight: 700; 
+    color: #444; 
+    padding: .6em 1.4em .5em .8em; width: 100%; 
+    max-width: 100%; 
+    border: 1px solid #aaa;
+
+}
+
+.select-btn {
+    padding: 8px 30px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.select-btn:hover {
+    background-color: #0056b3;
+}
+
+#imageContainer img{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 30px;
+}
+
+.resizedImage-input{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.resizedImage-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#downloadButton{
+    display: block;
+    margin: 0 auto;
+    padding: 10px 50px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+#downloadButton:hover {
+    background-color: #0056b3;
+}
+
+.resizedImage-title{
+    font-size: 23px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.resizedImage-form{
+    display: none;
+}
