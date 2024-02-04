@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="/index.html">
+                    <img src="../images/logo-headerr.png" alt="logo" class="header-logo">
+                </a>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="">Инструменты</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="">Помощь</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+
+        <div class="container">
+            <section class="characterCounting">
+                <div class="characterCounting__inner">
+                    <h1 class="characterCounting-title">Посчитать кол-во символов в тексте</h1>
+                    <textarea id="inputText" placeholder="Введите текст..."></textarea>
+                    <div id="counter">
+                        <div class="characterCounting__counter-column">
+                            <div class="characterCounting__counter-title">Всего символов</div>
+                            <div class="characterCounting__counter-num" id="totalChars">0</div>
+                        </div>
+                        <div class="characterCounting__counter-column">
+                            <div class="characterCounting__counter-title">Без пробелов</div>
+                            <div class="characterCounting__counter-num" id="noSpaces">0</div>
+                        </div>
+                        <div class="characterCounting__counter-column">
+                            <div class="characterCounting__counter-title">Кол-во слов</div>
+                            <div class="characterCounting__counter-num" id="wordCount">0</div>
+                        </div>
+                        <div class="characterCounting__counter-column">
+                            <div class="characterCounting__counter-title">Всего кириллических символов</div>
+                            <div class="characterCounting__counter-num" id="cyrillicChars">0</div>
+                        </div>
+                        <div class="characterCounting__counter-column">
+                            <div class="characterCounting__counter-title">Всего латинских символов</div>
+                            <div class="characterCounting__counter-num" id="latinChars">0</div>
+                        </div>
+                        <div class="characterCounting__counter-column">
+                            <div class="characterCounting__counter-title">Всего цифр</div>
+                            <div class="characterCounting__counter-num" id="digitCount">0</div>
+                        </div>
+                        <div class="characterCounting__counter-column">
+                            <div class="characterCounting__counter-title">Спец. символы</div>
+                            <div class="characterCounting__counter-num" id="specialChars">0</div>
+                        </div>
+                    </div>
+                </div>
+                <img src="../images/copy.png" alt="Copy Icon" id="copyIcon">
+            </section>
+        </div>
+
+
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <img src="../images/logo-headerr.png" alt="logo" class="header-logo">
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+<script src="../js/characterСounting.js"></script>
+</html>
