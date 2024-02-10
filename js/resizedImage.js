@@ -4,41 +4,29 @@ const resizedImageForm = document.querySelector('.resizedImage-form');
 
 selectBtn.addEventListener('click', () => {
     selectedImage.textContent = ''
-    createImages();
+    displayPicture();
     resizedImageForm.style.display = 'block';
 })
 
-function srcImage() {
-    let selectElement = document.getElementById('mySelect');
+function selectingPicture() {
+    const selectElement = document.getElementById('mySelect');
     let selectedValue = selectElement.options[selectElement.selectedIndex].value;
-    console.log(selectedValue);
 
-    if(selectedValue == 'dog'){
-        return '../images/resize/dog.jpg'
-    };
-    if(selectedValue == 'black'){
-        return '../images/resize/black.jpg'
-    };
-    if(selectedValue == 'forest'){
-        return '../images/resize/forest.jpg'
-    };
+    return `../images/resize/${selectedValue}.jpg`
 }
 
-function createImages(){
+function displayPicture(){
     let img = document.createElement('img');
-
-    img.src = srcImage()
-
+    img.src = selectingPicture()
     selectedImage.insertBefore(img, selectedImage.firstElementChild);
 }
 
-
-
-document.getElementById('downloadButton').addEventListener('click', function() {
+function resizeImage() {
     const widthInput = document.getElementById('widthInput').value;
     const heightInput = document.getElementById('heightInput').value;
     
     const selectedImage = document.querySelector('#imageContainer img');
+    
     const canvas = document.createElement('canvas');
     const ctx = canvas.getContext('2d');
     
@@ -49,9 +37,18 @@ document.getElementById('downloadButton').addEventListener('click', function() {
     
     const url = canvas.toDataURL('image/jpeg');
     
+    return url;
+  }
+
+function downloadResizedImage() {
+    const url = resizeImage();
+    
     const a = document.createElement('a');
     a.href = url;
     a.download = 'resized_image.jpg';
+    
     document.body.appendChild(a);
     a.click();
-  });
+}
+
+document.getElementById('downloadButton').addEventListener('click', downloadResizedImage);
