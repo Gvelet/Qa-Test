@@ -145,6 +145,16 @@ body {
     gap: 40px;
 }
 
+.menu__ip{
+    margin-left: auto;
+}
+.menu__ip-btn{
+    font-size: 20px;
+    background-color: #4A3E5C;
+    padding: 5px 15px;
+    color: #ccc;
+    border-radius: 15px;
+}
 .main__inner{
     display: flex;
     align-items: center;
