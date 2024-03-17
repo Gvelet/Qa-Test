@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Получить информацию по IP</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a href="/Qa-Test">
+                        <img src="../images/logo-headerr.png" alt="logo" class="header-logo">
+                    </a>                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="">Инструменты</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="">Помощь</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <div class="main">
+            <div class="container">
+                <section class="ip">
+                    <h1 class="ip-title">Поиск информации о IP адресе</h1>
+                    <form action="" class="ip__form">
+                        <div class="ip__form-info">
+                            <input type="text" id="ip__form-input" placeholder="Введите ip...">
+                            <button class="ip-form-show-myIP">Ввести свой ip</button>
+                        </div>
+                        <div class="ip__form-submit">
+                            <button class="ip__form-btn">Показать</button>
+                        </div>                       
+                    </form>
+                    <div id="ip__info">
+                        <div class="ip__info-column">
+                            <div class="ip__info-item">
+                                <h4 class="ip__info-title">IP:</h4>
+                                <span class="ip__info-ip"></span>
+                            </div>
+                            <div class="ip__info-item">
+                                <h4 class="ip__info-title">Город:</h4>
+                                <span class="ip__info-city"></span>
+                            </div>
+                            <div class="ip__info-item">
+                                <h4 class="ip__info-title">Регион:</h4>
+                                <span class="ip__info-region"></span>
+                            </div>
+                            <div class="ip__info-item">
+                                <h4 class="ip__info-title">Страна:</h4>
+                                <span class="ip__info-country"></span>
+                            </div>
+                        </div>
+                        <div class="ip__info-column">
+                            <div class="ip__info-item">
+                                <h4 class="ip__info-title">Координаты:</h4>
+                                <span class="ip__info-loc"></span>
+                            </div>
+                            <div class="ip__info-item">
+                                <h4 class="ip__info-title">Провайдер:</h4>
+                                <span class="ip__info-org"></span>
+                            </div>
+                            <div class="ip__info-item">
+                                <h4 class="ip__info-title">Индекс:</h4>
+                                <span class="ip__info-postal"></span>
+                            </div>
+                            <div class="ip__info-item">
+                                <h4 class="ip__info-title">ТаймЗона:</h4>
+                                <span class="ip__info-timezone"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ip__error">
+                        <p>К сожалению ничего не найдено. Попробуйте ввести другой ip-адрес</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <img src="../images/logo-headerr.png" alt="logo" class="header-logo">
+                </div>
+            </div>
+        </footer>
+    </div>
+
+<script src="../js/infoIP.js"></script>
+</body>
+</html>

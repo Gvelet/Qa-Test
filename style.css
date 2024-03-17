@@ -417,3 +417,91 @@ body {
 .resizedImage-form{
     display: none;
 }
+
+/* IP */
+
+.ip{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ip-title{
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+#ip__form-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#ip__form-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.ip__form-btn {
+    padding: 10px 70px;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+    align-items: center;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.ip-form-show-myIP {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.ip__form-btn:hover {
+    background-color: #0056b3;
+}
+
+#ip__info {
+    width: 600px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 18px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.ip__info-item{
+    margin-bottom: 20px;
+}
+
+.ip__error{
+    display: none;
+    font-size: 18px;
+    margin-top: 30px;
+    color: #94312A;
+}
+
+.ip__info-title {
+    display: inline-block;
+    color: #000;
+    font-weight: 700;
+    font-size: 20px;
+}
